@@ -728,23 +728,15 @@ h1 span {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  color: var(--white);
+  overflow: hidden;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
-.logo-tata { background: linear-gradient(135deg, #d96d4d, #b85e46); }
-.logo-reliance { background: linear-gradient(135deg, #7d6d5f, #49372d); }
-.logo-hdfc { background: linear-gradient(135deg, #0b6a7a, #0f4e5a); }
-.logo-lic { background: linear-gradient(135deg, #5e7d58, #475d3d); }
-.logo-gov { background: linear-gradient(135deg, #8a5f3d, #6d432a); }
-.logo-edu { background: linear-gradient(135deg, #c78d5d, #a96a4a); }
-.logo-bharat { background: linear-gradient(135deg, #335a8e, #254d79); }
-.logo-ignite { background: linear-gradient(135deg, #bf7b57, #96563f); }
-.logo-nest { background: linear-gradient(135deg, #6a6d4f, #494f36); }
-.logo-scholar { background: linear-gradient(135deg, #d6a36f, #b9825a); }
+.partner-logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .small-note {
   margin: 18px 0 0;
