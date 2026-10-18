@@ -17,15 +17,16 @@ This project is a static front-end website built with plain HTML and CSS. It inc
 
 ## Project structure
 
-- `index.html` — landing page and main marketing/homepage
-- `scholarship.html` — scholarship opportunities page
-- `education-loan.html` — education loan guidance page
-- `services.html` — service offerings page
-- `partners.html` — partner organizations and institutions
-- `success-stories.html` — student success stories
-- `contact.html` — contact information and inquiry form
-- `login.html` — login page
-- `register.html` — registration page
+- `index.html` — landing page and main marketing homepage
+- `pages/` — all secondary pages for the site
+  - `pages/scholarship.html` — scholarship opportunities page
+  - `pages/education-loan.html` — education loan guidance page
+  - `pages/services.html` — service offerings page
+  - `pages/partners.html` — partner organizations and institutions
+  - `pages/success-stories.html` — student success stories
+  - `pages/contact.html` — contact information and inquiry page
+  - `pages/login.html` — login page
+  - `pages/register.html` — registration page
 - `style.css` — shared styling and responsive design
 - `ScholarICON.svg` — custom brand icon used as favicon and logo mark
 
