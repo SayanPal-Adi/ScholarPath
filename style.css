@@ -29,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.75), transparent 30%),
     linear-gradient(180deg, #faf4ee 0%, #f7f3ee 100%);
@@ -1505,11 +1506,36 @@ h1 span {
   .navbar {
     width: 100%;
     justify-content: flex-start;
-    gap: 10px 14px;
+    gap: 8px 12px;
   }
 
   .navbar a {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .navbar .button {
+    min-height: 34px;
+    padding: 7px 12px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button,
+  .search-panel .button,
+  .register-band .button {
+    width: 100%;
+  }
+
+  .search-panel {
+    flex-wrap: wrap;
+    padding: 10px 10px 12px;
+  }
+
+  .search-panel input {
+    min-width: 100%;
   }
 }
 
@@ -1597,15 +1623,15 @@ h1 span {
   }
 
   .navbar {
-    gap: 10px 14px;
+    gap: 8px 12px;
   }
 
   .navbar a {
-    font-size: 0.82rem;
+    font-size: 0.72rem;
   }
 
   .navbar .button {
-    padding: 7px 10px;
+    padding: 6px 10px;
   }
 
   .hero {
@@ -1686,6 +1712,26 @@ h1 span {
   .footer-bottom {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    gap: 7px 10px;
+  }
+
+  .navbar a {
+    font-size: 0.68rem;
+  }
+
+  .button,
+  .button-small {
+    min-height: 40px;
+    padding-inline: 14px;
+  }
+
+  .register-band {
+    padding: 22px 18px;
   }
 }
 
