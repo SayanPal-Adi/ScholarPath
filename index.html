@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="announcement">
-    <p><marquee behavior="scroll" direction="left"><strong>Stay alert:</strong> Never pay an unknown person to secure a scholarship. Verify every opportunity before applying.</marquee></p>
+  <div class="announcement" aria-label="Important notice">
+    <div class="announcement-track">
+      <span><strong>Stay alert:</strong> Never pay an unknown person to secure a scholarship. Verify every opportunity before applying.</span>
+      <span aria-hidden="true"><strong>Stay alert:</strong> Never pay an unknown person to secure a scholarship. Verify every opportunity before applying.</span>
+    </div>
   </div>
 
   <header class="site-header">
@@ -26,8 +29,8 @@
       <a href="#partners">Partners</a>
       <a href="#success-stories">Success Stories</a>
       <a href="#contact">Contact</a>
-      <a class="nav-login" href="#register">Login</a>
-      <a class="button button-small" href="#register">Register</a>
+      <a class="nav-login" href="login.html">Login</a>
+      <a class="button button-small" href="login.html">Register</a>
     </nav>
   </header>
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to ScholarPath and manage your scholarship journey.">
+  <title>ScholarPath | Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-shell">
+    <aside class="auth-visual" aria-label="ScholarPath overview">
+      <a class="brand" href="index.html" aria-label="Back to homepage">
+        <span class="brand-mark">S</span>
+        <span>Scholar<span class="brand-accent">Path</span></span>
+      </a>
+
+      <div class="auth-content">
+        <p class="eyebrow">Your next step</p>
+        <h1>Access scholarships, loans, and student guidance in one place.</h1>
+        <p>Track opportunities, compare funding options, and stay organized through every stage of your education journey.</p>
+      </div>
+
+      <ul class="auth-points" aria-label="Key benefits">
+        <li>Explore verified scholarship opportunities</li>
+        <li>Save shortlisted education funding options</li>
+        <li>Stay on top of deadlines and next steps</li>
+      </ul>
+    </aside>
+
+    <main class="auth-panel" aria-labelledby="login-title">
+      <div class="auth-header">
+        <p class="eyebrow">Welcome back</p>
+        <h2 id="login-title">Log in to your account</h2>
+      </div>
+
+      <form class="auth-form" action="index.html" method="get">
+        <div class="field-group">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="auth-row">
+          <label class="check-wrap">
+            <input type="checkbox" name="remember" checked>
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="text-link">Forgot password?</a>
+        </div>
+
+        <button class="button" type="submit">Log in</button>
+      </form>
+
+      <div class="auth-divider"><span>or continue with</span></div>
+
+      <div class="auth-socials">
+        <button class="button button-outline social-button" type="button">Google</button>
+        <button class="button button-outline social-button" type="button">LinkedIn</button>
+      </div>
+
+      <p class="auth-signup">
+        Don’t have an account?
+        <a href="index.html#register">Create one</a>
+      </p>
+    </main>
+  </div>
+</body>
+</html>
