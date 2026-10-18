@@ -1118,10 +1118,23 @@ h1 span {
   font-size: 0.82rem;
 }
 
+.field-row {
+  display: grid;
+  gap: 16px;
+}
+
+.double-field {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .check-wrap {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.check-wrap-block {
+  margin-top: 4px;
 }
 
 .check-wrap input {

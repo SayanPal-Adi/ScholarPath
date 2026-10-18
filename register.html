@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your ScholarPath account to discover scholarships and student support.">
+  <title>ScholarPath | Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-shell">
+    <aside class="auth-visual" aria-label="ScholarPath overview">
+      <a class="brand" href="index.html" aria-label="Back to homepage">
+        <span class="brand-mark">S</span>
+        <span>Scholar<span class="brand-accent">Path</span></span>
+      </a>
+
+      <div class="auth-content">
+        <p class="eyebrow">A brighter future</p>
+        <h1>Build your profile and discover opportunities that fit your goals.</h1>
+        <p>Sign up to save scholarships, compare funding options, and track the next steps toward your education journey.</p>
+      </div>
+
+      <ul class="auth-points" aria-label="Benefits of signing up">
+        <li>Organize scholarships and college guidance</li>
+        <li>Track important deadlines and application stages</li>
+        <li>Access study and funding recommendations</li>
+      </ul>
+    </aside>
+
+    <main class="auth-panel" aria-labelledby="register-title">
+      <div class="auth-header">
+        <p class="eyebrow">Create account</p>
+        <h2 id="register-title">Register with ScholarPath</h2>
+      </div>
+
+      <form class="auth-form" action="login.html" method="get">
+        <div class="field-row double-field">
+          <div class="field-group">
+            <label for="first-name">First name</label>
+            <input id="first-name" name="firstName" type="text" placeholder="First name" required>
+          </div>
+
+          <div class="field-group">
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="lastName" type="text" placeholder="Last name" required>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="register-email">Email address</label>
+          <input id="register-email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="field-group">
+          <label for="confirm-password">Confirm password</label>
+          <input id="confirm-password" name="confirmPassword" type="password" placeholder="Re-enter password" required>
+        </div>
+
+        <label class="check-wrap check-wrap-block">
+          <input type="checkbox" name="terms" required>
+          <span>I agree to the Terms and Privacy Policy</span>
+        </label>
+
+        <button class="button" type="submit">Create account</button>
+      </form>
+
+      <div class="auth-divider"><span>or sign up with</span></div>
+
+      <div class="auth-socials">
+        <button class="button button-outline social-button" type="button">Google</button>
+        <button class="button button-outline social-button" type="button">LinkedIn</button>
+      </div>
+
+      <p class="auth-signup">
+        Already have an account?
+        <a href="login.html">Log in</a>
+      </p>
+    </main>
+  </div>
+</body>
+</html>
