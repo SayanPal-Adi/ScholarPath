@@ -202,8 +202,20 @@ footer[id],
 }
 
 .button:hover {
-  background: linear-gradient(135deg, var(--terracotta-dark), #be6d4a);
+  background: linear-gradient(135deg, #a94d35, #c67053);
+  border-color: #a94d35;
+  box-shadow: 0 12px 22px rgba(200, 109, 75, 0.28);
   transform: translateY(-1px);
+}
+
+.navbar .button {
+  box-shadow: 0 10px 18px rgba(200, 109, 75, 0.18);
+}
+
+.navbar .button:hover {
+  background: linear-gradient(135deg, #a94d35, #c67053);
+  border-color: #a94d35;
+  box-shadow: 0 12px 22px rgba(200, 109, 75, 0.28);
 }
 
 .button-small {
