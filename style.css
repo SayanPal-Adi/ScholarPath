@@ -213,6 +213,7 @@ footer[id],
 }
 
 .button:hover {
+  color:var(--white);
   background: linear-gradient(135deg, #a94d35, #c67053);
   border-color: rgba(110, 52, 39, 0.95);
   box-shadow: 0 12px 22px rgba(200, 109, 75, 0.28);
