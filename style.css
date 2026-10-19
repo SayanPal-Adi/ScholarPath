@@ -1425,10 +1425,6 @@ h1 span {
     padding-block: 48px;
   }
 
-  .hero-art {
-    min-height: 300px;
-  }
-
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1509,31 +1505,6 @@ h1 span {
 
   h1 {
     font-size: 2.35rem;
-  }
-
-  .hero-art {
-    min-height: 255px;
-  }
-
-  .art-person {
-    right: 38px;
-    transform: scale(0.85);
-    transform-origin: bottom right;
-  }
-
-  .art-card {
-    top: 35px;
-    left: 15px;
-  }
-
-  .art-book {
-    transform: scale(0.8) rotate(-12deg);
-    transform-origin: bottom left;
-  }
-
-  .book-two {
-    left: 112px;
-    transform: scale(0.8) rotate(9deg);
   }
 
   .stat-card {
@@ -1617,12 +1588,3 @@ h1 span {
   }
 }
 
-@keyframes ticker {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
