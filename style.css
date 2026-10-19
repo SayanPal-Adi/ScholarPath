@@ -314,6 +314,25 @@ h1 span {
   font-size: 0.85rem;
 }
 
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  padding: 18px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #f2ddd0 0%, #f8f3ee 100%);
+  border: 1px solid rgba(122, 90, 72, 0.08);
+  box-shadow: var(--shadow-strong);
+}
+
+.hero-illustration {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  border-radius: 26px;
+}
+
 .hero-art {
   position: relative;
   min-height: 360px;
