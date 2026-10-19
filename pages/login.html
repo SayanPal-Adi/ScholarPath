@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Login to ScholarPath and manage your scholarship journey.">
+  <meta name="theme-color" content="#c86d4b">
   <title>ScholarPath | Login</title>
+  <link rel="icon" type="image/svg+xml" href="../ScholarICON.svg">
+  <link rel="apple-touch-icon" href="../ScholarICON.svg">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body class="auth-page">
@@ -34,15 +37,15 @@
         <h2 id="login-title">Log in to your account</h2>
       </div>
 
-      <form class="auth-form" action="index.html" method="get">
+      <form class="auth-form" action="../index.html" method="get">
         <div class="field-group">
           <label for="email">Email address</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
         </div>
 
         <div class="field-group">
           <label for="password">Password</label>
-          <input id="password" name="password" type="password" placeholder="Enter your password" required>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
         </div>
 
         <div class="auth-row">

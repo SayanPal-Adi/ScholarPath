@@ -86,7 +86,7 @@
       <form class="search-panel" action="#featured" method="get">
         <label class="sr-only" for="scholarship-search">Search scholarships</label>
         <span class="search-icon" aria-hidden="true">⌕</span>
-        <input id="scholarship-search" type="search" placeholder="Search by scholarship, course, or provider">
+        <input id="scholarship-search" type="search" name="q" placeholder="Search by scholarship, course, or provider">
         <button class="button" type="submit">Search</button>
       </form>
       <div class="promo-grid">
@@ -257,7 +257,6 @@
         </article>
       </div>
       <p class="small-note">These are sample cards for the page layout, not live scholarship listings.</p>
-      <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
     </section>
 
     <section class="section section-tint" id="how-to-apply">
@@ -308,28 +307,5 @@
     <div class="footer-bottom"><p>© 2026 ScholarPath. Demo homepage — verify all information before publishing.</p><a href="#home">Back to top ↑</a></div>
   </footer>
 
-  <script>
-    const searchForm = document.querySelector(".search-panel");
-    const searchInput = document.querySelector("#scholarship-search");
-    const scholarshipCards = [...document.querySelectorAll(".scholarship-card")];
-    const feedback = document.querySelector("#search-feedback");
-
-    searchForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const query = searchInput.value.trim().toLowerCase();
-      let visibleCount = 0;
-
-      scholarshipCards.forEach((card) => {
-        const matches = !query || (card.innerText + " " + card.dataset.search).toLowerCase().includes(query);
-        card.hidden = !matches;
-        if (matches) visibleCount++;
-      });
-
-      feedback.textContent = visibleCount
-        ? `${visibleCount} sample ${visibleCount === 1 ? "opportunity" : "opportunities"} shown. These are demo listings, not live results.`
-        : "No matching sample cards. Try “merit”, “financial aid”, or “government”.";
-      document.querySelector("#featured").scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  </script>
 </body>
 </html>
