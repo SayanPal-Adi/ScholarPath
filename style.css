@@ -319,18 +319,21 @@ h1 span {
   align-items: center;
   justify-content: center;
   min-height: 360px;
-  padding: 18px;
+  padding: 0;
   border-radius: 32px;
   background: linear-gradient(180deg, #f2ddd0 0%, #f8f3ee 100%);
-  border: 1px solid rgba(122, 90, 72, 0.08);
-  box-shadow: var(--shadow-strong);
+  overflow: hidden;
+  border: 0;
+  box-shadow: none;
 }
 
 .hero-illustration {
   display: block;
-  width: min(100%, 560px);
-  height: auto;
-  border-radius: 26px;
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 32px;
 }
 
 .hero-art {
