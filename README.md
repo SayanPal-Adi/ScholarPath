@@ -27,8 +27,9 @@ This project is a static front-end website built with plain HTML and CSS. It inc
   - `pages/contact.html` — contact information and inquiry page
   - `pages/login.html` — login page
   - `pages/register.html` — registration page
-- `style.css` — shared styling and responsive design
-- `ScholarICON.svg` — custom brand icon used as favicon and logo mark
+- `css/style.css` — shared styling and responsive design
+- `assets/` — image files such as the logo and hero illustration
+- `assets/ScholarICON.svg` — custom brand icon used as favicon and logo mark
 
 ## Run locally
 
@@ -47,16 +48,16 @@ http://localhost:8000/
 ## Notes
 
 - The site is fully front-end based and does not use a backend.
-- Styling is centralized in `style.css` for consistency across pages.
+- Styling is centralized in `css/style.css` for consistency across pages.
 - The project is mobile-friendly and tuned for smaller screen sizes.
 
 ## Customization
 
 You can update branding, colors, page content, and layouts directly in:
 
-- `style.css`
+- `css/style.css`
 - the individual HTML pages
-- `ScholarICON.svg`
+- `assets/ScholarICON.svg`
 
 ## License
 
