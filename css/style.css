@@ -589,21 +589,23 @@ h1 span {
 }
 
 .story-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .story-card {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
-  padding: 22px;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  min-height: 220px;
 }
 
 .story-avatar {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: var(--soft);
   color: var(--accent-dark);
@@ -616,8 +618,9 @@ h1 span {
 }
 
 .story-quote {
-  margin: 0 0 12px;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 .story-name {
@@ -626,8 +629,9 @@ h1 span {
 }
 
 .story-detail {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   font-size: 0.78rem;
+  color: var(--muted);
 }
 
 .register-band {
