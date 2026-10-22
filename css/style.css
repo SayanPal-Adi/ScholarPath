@@ -72,7 +72,8 @@ footer[id],
   gap: 30px;
   white-space: nowrap;
   overflow: hidden;
-}
+  animation: marquee 20s linear infinite;
+} 
 
 .announcement-track span {
   display: inline-block;
