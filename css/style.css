@@ -98,8 +98,8 @@ footer[id],
   justify-content: space-between;
   gap: 20px;
   padding: 16px 5%;
-  background: var(--bg);
-  border-bottom: 1px solid var(--line);
+  background: #eef3ff;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.12);
 }
 
 .brand {
@@ -519,10 +519,166 @@ h1 span {
 }
 
 .partner-logo {
+  position: relative;
   width: 42px;
   height: 42px;
   border-radius: 12px;
   overflow: hidden;
+  display: inline-block;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.partner-logo::before,
+.partner-logo::after {
+  content: "";
+  position: absolute;
+}
+
+.logo-tata { background: linear-gradient(135deg, #f97316, #ef4444); }
+.logo-tata::before {
+  inset: 8px 10px 8px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 5px 5px 5px 12px;
+  transform: skew(-18deg);
+}
+
+.logo-reliance { background: linear-gradient(135deg, #1f2937, #111827); }
+.logo-reliance::before {
+  inset: 11px 9px 11px 9px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+}
+.logo-reliance::after {
+  left: 21px;
+  top: 8px;
+  width: 8px;
+  height: 26px;
+  background: rgba(248, 113, 113, 0.9);
+  border-radius: 6px;
+  transform: rotate(26deg);
+}
+
+.logo-hdfc { background: linear-gradient(135deg, #0f766e, #0f172a); }
+.logo-hdfc::before {
+  left: 9px;
+  right: 9px;
+  top: 9px;
+  bottom: 9px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 3px rgba(15, 118, 110, 0.4);
+}
+.logo-hdfc::after {
+  left: 14px;
+  right: 14px;
+  top: 14px;
+  bottom: 14px;
+  background: linear-gradient(to right, transparent 0 15%, rgba(15, 118, 110, 0.75) 15% 35%, transparent 35% 50%, rgba(15, 118, 110, 0.75) 50% 70%, transparent 70% 100%);
+}
+
+.logo-lic { background: linear-gradient(135deg, #22c55e, #15803d); }
+.logo-lic::before {
+  inset: 10px 13px 10px 13px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+}
+.logo-lic::after {
+  left: 16px;
+  right: 16px;
+  top: 9px;
+  bottom: 9px;
+  border-left: 3px solid rgba(34, 197, 94, 0.8);
+  border-right: 3px solid rgba(34, 197, 94, 0.8);
+  border-radius: 3px;
+}
+
+.logo-gov { background: linear-gradient(135deg, #a16207, #7c2d12); }
+.logo-gov::before {
+  left: 9px;
+  right: 9px;
+  top: 9px;
+  bottom: 9px;
+  background: rgba(255, 255, 255, 0.85);
+  clip-path: polygon(50% 0%, 62% 35%, 100% 35%, 68% 57%, 80% 100%, 50% 74%, 20% 100%, 32% 57%, 0% 35%, 38% 35%);
+}
+
+.logo-edu { background: linear-gradient(135deg, #d97706, #b45309); }
+.logo-edu::before {
+  left: 8px;
+  right: 8px;
+  bottom: 9px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px 4px 0 0;
+}
+.logo-edu::after {
+  left: 12px;
+  right: 12px;
+  top: 9px;
+  height: 18px;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.logo-bharat { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+.logo-bharat::before {
+  left: 10px;
+  right: 10px;
+  top: 11px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 9px 0 rgba(255, 255, 255, 0.95), 0 18px 0 rgba(255, 255, 255, 0.95);
+}
+
+.logo-ignite { background: linear-gradient(135deg, #f97316, #ea580c); }
+.logo-ignite::before {
+  left: 10px;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.logo-ignite::after {
+  left: 18px;
+  top: 16px;
+  width: 6px;
+  height: 16px;
+  background: rgba(249, 115, 22, 0.8);
+  border-radius: 0 0 4px 4px;
+}
+
+.logo-nest { background: linear-gradient(135deg, #4b5563, #374151); }
+.logo-nest::before {
+  inset: 8px;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+.logo-nest::after {
+  inset: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.logo-scholar { background: linear-gradient(135deg, #f59e0b, #c2410c); }
+.logo-scholar::before {
+  left: 9px;
+  right: 9px;
+  top: 11px;
+  bottom: 11px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+}
+.logo-scholar::after {
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+  border-left: 3px solid rgba(255, 255, 255, 0.9);
+  border-right: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
 }
 
 .small-note {
@@ -1076,8 +1232,8 @@ h1 span {
   padding: 10px 18px;
   border: 1px solid var(--accent);
   border-radius: 10px;
-  /* background: var(--accent); */
-  color: white;
+  background: White;
+  color: var(--accent);
   font-weight: bold;
   cursor: pointer;
 }
