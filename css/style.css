@@ -1068,4 +1068,21 @@ h1 span {
     min-width: 100%;
   }
 }
+.b4button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  /* background: var(--accent); */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.b4button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08); 
+}
 
