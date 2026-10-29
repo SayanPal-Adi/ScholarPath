@@ -272,17 +272,20 @@ h1 span {
   align-items: center;
   justify-content: center;
   min-height: 330px;
-  background: transparent;
+  background: linear-gradient(180deg, rgba(219, 234, 254, 0.7), rgba(219, 234, 254, 0.2));
   border: none;
-  border-radius: 10px;
-  overflow: visible;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(30, 41, 59, 0.06);
 }
 
 .hero-illustration {
-  width: 100%;
-  max-height: 330px;
+  width: 103%;
+  max-height: 340px;
   object-fit: contain;
   display: block;
+  border-radius: 32px;
+  filter: drop-shadow(0 14px 20px rgba(30, 41, 59, 0.08));
 }
 
 .stats {
