@@ -1,64 +1,47 @@
 # ScholarPath
 
-ScholarPath is a responsive, multi-page scholarship and education support website designed to help students discover scholarships, education loans, services, partners, success stories, and contact options.
+ScholarPath is a modern, student-focused web experience designed to help learners discover scholarships, compare funding options, and access education support through a clean and intuitive interface.
 
 ## Overview
 
-This project is a static front-end website built with plain HTML and CSS. It includes a landing page and supporting pages for:
+The platform presents key student services in a responsive, multi-page format, including:
 
-- Scholarships
-- Education loans
-- Services
-- Partners
-- Success stories
-- Contact
-- Login
-- Registration
+- scholarship discovery and recommendations
+- education loan guidance
+- student service listings
+- partner organizations and institutions
+- success stories and social proof
+- contact and inquiry flow
+- secure login and registration flows
 
-## Project structure
+## Live Deployment
 
-- `index.html` — landing page and main marketing homepage
-- `pages/` — all secondary pages for the site
-  - `pages/scholarship.html` — scholarship opportunities page
-  - `pages/education-loan.html` — education loan guidance page
-  - `pages/services.html` — service offerings page
-  - `pages/partners.html` — partner organizations and institutions
-  - `pages/success-stories.html` — student success stories
-  - `pages/contact.html` — contact information and inquiry page
-  - `pages/login.html` — login page
-  - `pages/register.html` — registration page
-- `css/style.css` — shared styling and responsive design
-- `assets/` — image files such as the logo and hero illustration
-- `assets/ScholarICON.svg` — custom brand icon used as favicon and logo mark
+Visit the deployed project here:
 
-## Run locally
+https://sayanpal-adi.github.io/ScholarPath/
 
-From the project folder, start a local web server:
+## Project Structure
 
-```bash
-python3 -m http.server 8000
-```
+- `index.html` — landing page and primary marketing experience
+- `pages/` — supporting pages for scholarships, services, membership, contact, login, and registration
+- `css/style.css` — shared styling, layout system, and responsive behavior
+- `assets/` — visual assets and brand graphics
+- `assets/ScholarICON.svg` — custom brand icon used across the product
 
-Then open:
+## Design Highlights
 
-```text
-http://localhost:8000/
-```
+- responsive layout for desktop and mobile screens
+- clear call-to-action sections for student engagement
+- consistent visual hierarchy and strong accessibility-focused structure
+- reusable styling patterns across multiple pages
+- clean, modern interface suited to education and funding discovery
 
 ## Notes
 
-- The site is fully front-end based and does not use a backend.
-- Styling is centralized in `css/style.css` for consistency across pages.
-- The project is mobile-friendly and tuned for smaller screen sizes.
-
-## Customization
-
-You can update branding, colors, page content, and layouts directly in:
-
-- `css/style.css`
-- the individual HTML pages
-- `assets/ScholarICON.svg`
+- The project is a static front-end implementation built with HTML and CSS.
+- Styling is centralized to keep the experience consistent across the full site.
+- The design is suitable for extension with future backend integrations or dynamic content sources.
 
 ## License
 
-This project is for educational/demo purposes unless otherwise specified.
+This project is intended for educational and demonstration purposes unless otherwise specified.
