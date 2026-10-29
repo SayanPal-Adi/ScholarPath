@@ -1,17 +1,17 @@
 :root {
-  --bg: #f4efe9;
+  --bg: #f3f4f6;
   --white: #ffffff;
   --card: #ffffff;
-  --line: #e6d9cf;
-  --text: #1e1a18;
-  --muted: #5a504b;
-  --accent: #d37a4a;
-  --accent-dark: #b75d3b;
-  --soft: #f5e9df;
-  --dark: #2d2521;
-  --cream: #f7efe7;
-  --sage: #eef1e6;
-  --peach: #f8ebdf;
+  --line: rgba(17, 24, 39, 0.12);
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #111827;
+  --accent-dark: #374151;
+  --soft: #f3f4f6;
+  --dark: #111827;
+  --cream: #f3f4f6;
+  --sage: #f3f4f6;
+  --peach: #f3f4f6;
 }
 
 * {
@@ -62,9 +62,9 @@ footer[id],
 }
 
 .announcement {
-  background: #f0e3d3;
-  border-bottom: 1px solid #d7c1ac;
-  color: #4d433e;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
 }
 
 .announcement-track {
@@ -98,7 +98,7 @@ footer[id],
   justify-content: space-between;
   gap: 20px;
   padding: 16px 5%;
-  background: #fff;
+  background: var(--white);
   border-bottom: 1px solid var(--line);
 }
 
@@ -151,7 +151,7 @@ footer[id],
   border: 1px solid var(--accent);
   border-radius: 10px;
   background: var(--accent);
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   cursor: pointer;
 }
@@ -159,6 +159,7 @@ footer[id],
 .button:hover {
   background: var(--accent-dark);
   border-color: var(--accent-dark);
+  color: var(--white);
 }
 
 .button-small {
@@ -171,10 +172,22 @@ footer[id],
   color: var(--accent-dark);
 }
 
+.button-outline:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
 .button-light {
-  background: #fff;
+  background: var(--white);
   color: var(--text);
   border-color: var(--line);
+}
+
+.button-light:hover {
+  background: var(--soft);
+  border-color: var(--line);
+  color: var(--text);
 }
 
 .hero {
@@ -259,8 +272,8 @@ h1 span {
   align-items: center;
   justify-content: center;
   min-height: 330px;
-  background: #f3dfd3;
-  border: 1px solid #ebd3c1;
+  background: var(--soft);
+  border: 1px solid var(--line);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -304,7 +317,7 @@ h1 span {
 }
 
 .section-tint {
-  background: #f6f0ea;
+  background: var(--soft);
 }
 
 .section-heading {
@@ -403,9 +416,9 @@ h1 span {
   padding: 24px;
 }
 
-.promo-cream { background: #f1e2d5; }
-.promo-peach { background: var(--peach); }
-.promo-sage { background: var(--sage); }
+.promo-cream { background: var(--soft); }
+.promo-peach { background: var(--soft); }
+.promo-sage { background: var(--soft); }
 
 .promo-tag {
   display: inline-block;
@@ -465,6 +478,12 @@ h1 span {
 
 .service-card {
   padding: 18px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
 }
 
 .service-icon {
@@ -490,7 +509,13 @@ h1 span {
   gap: 12px;
   padding: 16px 14px;
   font-weight: bold;
-  color: #4d403b;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-name:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
 }
 
 .partner-logo {
@@ -511,6 +536,12 @@ h1 span {
 
 .scholarship-card {
   padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
 }
 
 .scholarship-top {
@@ -533,9 +564,9 @@ h1 span {
 .status-label {
   padding: 5px 8px;
   border-radius: 999px;
-  background: #f4ebdf;
+  background: var(--soft);
   font-size: 0.72rem;
-  color: #5f4a3f;
+  color: var(--text);
 }
 
 .card-kicker {
@@ -572,7 +603,7 @@ h1 span {
 }
 
 .step-highlight {
-  background: #f7e9dd;
+  background: var(--soft);
 }
 
 .step-number {
@@ -613,8 +644,8 @@ h1 span {
 }
 
 .avatar-olive {
-  background: var(--sage);
-  color: #586241;
+  background: var(--soft);
+  color: var(--text);
 }
 
 .story-quote {
@@ -647,16 +678,16 @@ h1 span {
 }
 
 .register-band .eyebrow {
-  color: #efc9a4;
+  color: var(--soft);
 }
 
 .register-band p:not(.eyebrow) {
   margin: 0;
-  color: #e7ddd8;
+  color: var(--white);
 }
 
 .site-footer {
-  background: #efdfd1;
+  background: var(--soft);
 }
 
 .footer-main {
@@ -682,7 +713,7 @@ h1 span {
   justify-content: space-between;
   gap: 20px;
   padding: 18px 5%;
-  border-top: 1px solid #d2bda9;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.76rem;
 }
@@ -790,7 +821,7 @@ h1 span {
   padding: 22px 24px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: #f4e8df;
+  background: var(--soft);
 }
 
 .auth-page {
@@ -812,7 +843,7 @@ h1 span {
 
 .auth-visual {
   padding: 30px;
-  background: #f1e0d2;
+  background: var(--soft);
   border-right: 1px solid var(--line);
 }
 
@@ -877,7 +908,7 @@ h1 span {
   padding: 10px 12px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fffdfb;
+  background: var(--white);
 }
 
 .auth-row {
