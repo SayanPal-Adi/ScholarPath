@@ -9,6 +9,8 @@ Thumbs.db
 # Logs
 *.log
 
+style1.css
+
 # Dependencies
 node_modules/
 
